@@ -1,0 +1,15 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Open Office Booking System</title>
+</head>
+<body>
+<h1>Welcome to the Open Office Booking System</h1>
+<p>This system allows you to register your open office 1-hour slots for others to book and meet with you.</p>
+<p><a href="/register">Register your open office slots</a></p>
+</body>
+</html>
+
+
