@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Available Office Slots</title>
+</head>
+<body>
+<h1>Book Available Office Slots</h1>
+<form action="/book" method="post">
+<label for="slot_id">Slot ID:</label>
+<select name="slot_id" id="slot_id">
+{% for slot in registered_slots %}
+<option value="{{ loop.index }}">{{ slot.name }} - {{ slot.date }} {{ slot.time }}</option>
+{% endfor %}
+</select>
+<br>
+<input type="submit" value="Book">
+</form>
+</body>
+</html>
+
+
