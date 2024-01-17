@@ -1,0 +1,27 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+</head>
+<body>
+<h1>Profile</h1>
+<p>Name: {{ user.name }}</p>
+<p>Email: {{ user.email }}</p>
+<h2>Registered Slots</h2>
+<ul>
+{% for slot in registered_slots %}
+<li>{{ slot.name }} - {{ slot.date }} {{ slot.time }}</li>
+{% endfor %}
+</ul>
+<h2>Booked Slots</h2>
+<ul>
+{% for slot in booked_slots %}
+<li>{{ slot.name }} - {{ slot.date }} {{ slot.time }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
